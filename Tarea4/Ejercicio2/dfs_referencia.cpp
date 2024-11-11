@@ -2,6 +2,8 @@
  ***Algoritmo: Depth First Search Recursivo - Backtracking
  ***Tipo: Teoria de Grafos
  ***Autor: Jhosimar George Arias Figueroa
+ https://jariasf.wordpress.com/2012/03/02/algoritmo-de-busqueda-depth-first-search-parte-1/
+ https://raw.githubusercontent.com/jariasf/Online-Judges-Solutions/master/Algorithms/C++/Graph%20Theory/Algoritmo%20DFS%20usando%20Recursion.cpp
  ******************************************/
 
 /*
