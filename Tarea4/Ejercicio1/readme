@@ -1,0 +1,60 @@
+# Algoritmo para encontrar la ruta más larga en un grafo
+
+Este programa encuentra los puntos de intersección entre segmentos de línea en un plano y los guarda en un archivo de salida.
+
+## Requisitos
+
+- Compilador C++ (gcc o g++)
+- Sistema operativo compatible con la línea de comandos (Windows, macOS, Linux)
+
+## Compilación
+
+Para compilar el programa, abre una terminal y navega a la carpeta donde se encuentra el archivo `AlgoritmoSlowIntersectionPoints.cpp`. Ejecuta el siguiente comando:
+
+```sh
+g++ -Wall -o prog AlgoritmoSlowIntersectionPoints.cpp
+
+```
+## Formato de los archivos de entrada
+
+El archivo de entrada debe contener la siguiente información en el siguiente formato:
+
+    La primera línea contiene un entero n, que indica el número de segmentos.
+
+    Las siguientes n líneas contienen las coordenadas de los puntos extremos de cada segmento en el siguiente formato: x1 y1 x2 y2.
+    
+
+Ejemplo de archivo de entrada:
+
+4
+1 1 4 4
+1 8 2 4
+2 4 6 2
+5 8 7 4
+
+
+## Ejemplos de ejecución
+
+Desde un archivo de texto
+
+Si tienes un archivo de entrada llamado entrada.txt, puedes ejecutar el programa así:
+
+```sh
+./prog < entrada.txt
+```
+
+En este ejemplo, el programa leera el archivo entrada.txt y imprimirá el resultado.
+
+## Salida
+El programa generará un archivo de salida llamado resultado.txt, que contiene el número de puntos de intersección y las coordenadas de estos puntos.
+
+Ejemplo de salida:
+
+    resultado.txt:
+    2
+    3 3
+    2 4
+
+    Terminal:
+    0.001085
+
