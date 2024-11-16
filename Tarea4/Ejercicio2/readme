@@ -1,0 +1,69 @@
+# Algoritmo para encontrar la ruta más larga en un grafo
+
+Este programa encuentra la ruta más larga entre dos nodos en un grafo, utilizando un algoritmo de búsqueda en profundidad (DFS).
+
+## Requisitos
+
+- Compilador C++ (gcc o g++)
+- Sistema operativo compatible con la línea de comandos (Windows, macOS, Linux)
+
+## Compilación
+
+Para compilar el programa, abre una terminal y navega a la carpeta donde se encuentra el archivo `dfs_longest.cpp`. Ejecuta el siguiente comando:
+
+```sh
+g++ -Wall -o dfs_longest dfs_longest.cpp
+
+```
+## Formato de los archivos de entrada
+
+El archivo de entrada debe contener la siguiente información en el siguiente formato:
+
+    Primera Linea: Un texto que indica el nombre del archivo de entrada(Se debe agregar o si no se causaran errores).
+
+    La primera línea contiene dos enteros: V (número de vértices) y E (número de aristas).
+
+    Las siguientes E líneas contienen tres enteros cada una, u, v y peso, que representan una arista entre los vértices u y v con un peso peso.
+
+Ejemplo de archivo de entrada:
+
+Titulo: Grafo de ejemplo
+5 4
+1 2 10
+2 3 15
+3 4 20
+4 5 25
+
+## Ejemplos de ejecución
+
+Desde un archivo de texto
+
+Si tienes un archivo de entrada llamado ejemplo.txt, puedes ejecutar el programa así:
+
+```sh
+./dfs_longest I F < ejemplo.txt
+```
+
+Donde I es el nodo inicial y F es el nodo final.
+
+```sh
+./dfs_longest 1 5 < ejemplo.txt
+```
+
+En este ejemplo, el programa buscará la ruta más larga desde el nodo 1 hasta el nodo 5.
+
+## Salida
+El programa imprimirá la distancia total de la ruta más larga, la ruta más larga y el tiempo total de ejecución.
+
+Ejemplo de salida:
+
+    Numero de vertices: 5
+    Numero de aristas: 4
+
+    Nodo inicial: 1
+    Nodo final: 5
+
+    Distancia total de la ruta mas larga: 70
+    Ruta mas larga: 1 -> 2 -> 3 -> 4 -> 5
+
+Tiempo total de ejecucion: 0.000456 segundos
