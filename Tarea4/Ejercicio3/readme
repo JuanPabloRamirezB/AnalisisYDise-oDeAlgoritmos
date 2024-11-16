@@ -1,0 +1,56 @@
+# Algoritmo para comprobar si un grafo es bipartito
+
+Este programa determina si un grafo es bipartito o no, utilizando una búsqueda en anchura (BFS).
+
+## Requisitos
+
+- Compilador C++ (gcc o g++)
+- Sistema operativo compatible con la línea de comandos (macOS, Linux)
+
+## Compilación
+
+Para compilar el programa, abre una terminal y navega a la carpeta donde se encuentra el archivo `bipartita.cpp`. Ejecuta el siguiente comando:
+
+```sh
+g++ -Wall -o bipartita bipartita.cpp
+
+```
+## Formato de los archivos de entrada
+
+El archivo de entrada debe contener la siguiente información en el siguiente formato:
+
+    Primera Linea: Un texto que indica el nombre del archivo de entrada(Se debe agregar o si no se causaran errores).
+
+    La segunda línea contiene tres enteros: V (número de vértices), E (número de aristas), y D (1 si el grafo es dirigido, 2 si es no dirigido).
+
+    Las siguientes E líneas contienen dos enteros cada una, u y v, que representan una arista entre los vértices u y v.
+
+Ejemplo de archivo de entrada:
+
+Titulo: Grafo de ejemplo
+5 4 1
+1 2
+2 3
+3 4
+4 5
+
+## Ejemplos de ejecución
+Desde un archivo de texto:
+Si tienes un archivo de entrada en formato .txt, puedes ejecutar el programa así:
+
+```sh
+./bipartita < archivo.txt
+```
+
+## Salida
+El programa imprimirá si el grafo es bipartito o no, y el tiempo total de ejecución.
+
+Ejemplo de salida:
+
+Numero de vertices: 5
+Numero de aristas: 4
+Dirigido: 1
+
+Bipartita
+
+Tiempo total de ejecucion: 0.000123 segundos

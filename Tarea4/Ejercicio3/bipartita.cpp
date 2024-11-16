@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+/*
+https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+*/
+=======
+>>>>>>> 32dc1c0bc0970a5c9f44fb8c70f0072ad9f5614e
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -6,8 +12,13 @@
 //using namespace std;
 
 #define MAX 500
+<<<<<<< HEAD
+//std::vector<std::pair<int, int>> ady[MAX];  // Lista de adyacencia
+std::vector<int> ady[MAX];                  // Lista de adyacencia
+=======
 std::vector<std::pair<int, int>> ady[MAX];  // Lista de adyacencia
 //std::vector<int> ady[MAX];                  // Lista de adyacencia
+>>>>>>> 32dc1c0bc0970a5c9f44fb8c70f0072ad9f5614e
 int V, E;                                   // Número de vértices y aristas
 
 bool isBipartite(int i) {
@@ -23,11 +34,21 @@ bool isBipartite(int i) {
         //printf("u: %d\n", u);
         q.pop();
 
+<<<<<<< HEAD
+        //for (auto& vecino : ady[u]) {
+        for (int v : ady[u]) {
+            //int v = vecino.first;
+            //printf("v: %d\n", v);
+            //printf("color[v]: %d\n", color[v]);
+            //printf("color[u]: %d\n", color[u]);
+            
+=======
         for (auto& vecino : ady[u]) {
             int v = vecino.first;
             //printf("v: %d\n", v);
             //printf("color[v]: %d\n", color[v]);
             //printf("color[u]: %d\n", color[u]);
+>>>>>>> 32dc1c0bc0970a5c9f44fb8c70f0072ad9f5614e
             // Si el vértice adyacente no ha sido coloreado, le asignamos un color opuesto
             if (color[v] == -1) {
                 color[v] = 1 - color[u];
@@ -55,6 +76,44 @@ bool checkBipartite() {
 }
 
 int main(int argc, char* argv[]) {
+<<<<<<< HEAD
+    // if (argc != 3) {
+    //     std::cout << "Uso: " << argv[0] << " <nombre_archivo>" << std::endl;
+    //     return 1;
+    // }
+
+    // std::ifstream file(argv[1]);
+    // if (!file.is_open()) {
+    //     std::cout << "No se pudo abrir el archivo" << std::endl;
+    //     return 1;
+    // }
+
+    int D;
+    //printf("Peso: %d\n", peso);
+    std::string line;
+    getline(std::cin, line);
+    printf("%s\n", line.c_str());
+    // Leer el número de vértices y aristas
+    std::cin >> V >> E >> D;
+    printf("Numero de vertices: %d\nNumero de aristas: %d\nDirigido: %d\n", V, E, D);
+
+    // Leer los vértices y aristas
+    int u, v;//, w = 1;
+    for (int i = 0; i < E; ++i) {
+
+        std::cin >> u >> v;
+        
+        //printf("u: %d, v: %d\n", u, v);
+        if (D==1) {
+        ady[u].emplace_back(v); 
+        ady[v].emplace_back(u); // Grafo no dirigido
+        }else if(D==2)
+        ady[u].emplace_back(v); // Grafo dirigido
+
+        //ady[u].push_back(std::make_pair(v, w)); 
+    }
+    //file.close();
+=======
     if (argc != 3) {
         std::cout << "Uso: " << argv[0] << " <nombre_archivo> <1 ponderado||2 no ponderado>" << std::endl;
         return 1;
@@ -88,6 +147,7 @@ int main(int argc, char* argv[]) {
         //ady[u].push_back(std::make_pair(v, w)); 
     }
     file.close();
+>>>>>>> 32dc1c0bc0970a5c9f44fb8c70f0072ad9f5614e
 
     clock_t start = clock();
     bool bipartite = checkBipartite();
